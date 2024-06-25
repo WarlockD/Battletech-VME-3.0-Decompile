@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <identifier>vwe-release-13.1.8</identifier>
+  <mediatype>software</mediatype>
+  <collection>open_source_software</collection>
+  <collection>community</collection>
+  <creator>Virtual World Entertainment</creator>
+  <date>1996</date>
+  <description>Battletech Pod Backup obtained from a backup tape.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Contains all the software used to run the center and pod systems.&lt;/div&gt;&lt;div&gt;Application will not open due to the lack of ArcNet A/ROSE card emulation. My hope with this release is to get interest in someone to possibly get some sort of emulator working. The programs are designed to work specifically with the A/ROSE ArcNet Card, and cannot be bypassed with binary/hex edit hacks.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Another less-than-legal option, is getting the map/data/model files ported to it's own new engine, that could possibly be used by the pods, or on an entirely PC based system with the same aesthetic as the original pods. &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The latter option would be easier, but would be very hacky and not benefit the owners of the Battletech Pod Version 3 Community, which this project was started for, and was only given permission to post, in order to find a solution to the first issue.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Tape was backed up using Retrospect backup software&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Apparently this release was a fix for two mechs that were released at the time who were really over powered and dominated networked games. This version of the software nerfed the mechs to an acceptable but still powerfull level.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;WARNING!!!&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Archive is in StuffIt Macintosh Format. This is MAC OS CLASSIC PPC software and won't run or be readable without the resource fork, which contains necssary metadata to be usable on Mac OS Classic, and is embedded in the file. As such, this will ONLY BE EXTRACTIBLE ON PRE-SNOW LEOPARD STUFFIT. Any transfer to ANY OTHER OS WILL STRIP IT OF FILESYSTEM DATA NEEDED BY MAC OS CLASSIC TO WORK!!!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style="color:rgb(44,44,44);font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:14px;background-color:rgb(255,255,255);"&gt;Note: The Battletech Pod Archive Project is not affiliated in any way with FASA Corporation, Catalyst Game Systems, Virtual World Entertainment, Pirahna Games, or any other official Battletech entity. It is purely a preservation project, born out of our love for these systems.&lt;/span&gt;&lt;br /&gt;&lt;/div&gt;</description>
+  <language>eng</language>
+  <scanner>Internet Archive HTML5 Uploader 1.6.4</scanner>
+  <subject>Battletech, Battletech Center, Battletech Pods, Mechwarrior, Virtual Reality, VR, FASA Corporation, Catalyst Game Systems, Virtual World Entertainment, Pirahna Games, BattleMech</subject>
+  <subject>Battletech</subject>
+  <subject>Mechwarrior</subject>
+  <subject>Tabletop</subject>
+  <subject>VR</subject>
+  <subject>Virtual reality</subject>
+  <subject>simulator</subject>
+  <subject>mech</subject>
+  <subject>robot</subject>
+  <subject>backup</subject>
+  <subject>tape</subject>
+  <subject>FASA</subject>
+  <title>Battletech Pods - VWE Release 13.1.8</title>
+  <uploader>battletechpodproject@gmail.com</uploader>
+  <publicdate>2022-05-01 04:07:20</publicdate>
+  <addeddate>2022-05-01 04:07:20</addeddate>
+  <curation>[curator]validator@archive.org[/curator][date]20220501041255[/date][comment]checked for malware[/comment]</curation>
+  <year>1996</year>
+</metadata>

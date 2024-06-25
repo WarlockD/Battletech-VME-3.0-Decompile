@@ -1,0 +1,48 @@
+Date:  Tuesday, July 19, 1994 12:29:57 AMAuthor:  Apple Computer, Inc.
+Subject:  A/ROSETM1.2.1
+
+Equipment:  Macintosh
+
+Summary:  Includes the A/ROSE v1.2.1 System Extension, including the 
+associated interface files and object modules.  Latest update for the 
+A/ROSE software, v1.2.1, required for Apple Macintosh Coprocessor based 
+NuBus cards such as the Ethernet NB, TokenTalk NB, and TokenRing 4/16 NB 
+cards running on the PowerPC system.
+
+Addresses a compatibility issue with operations on the PowerPC.  
+
+o When VM was inactive and the processor was not a 68040, A/ROSE 1.2 left 
+a block of shared motherboard memory used by NuBus cards unlocked and 
+cachable.  This improved performance on 68030-based Macintoshes (see the 
+release notes for A/ROSE 1.1.8).  For performance reasons, the 68040's 
+data cache(s) are implemented very differently than the 68030's, so the 
+A/ROSE driver must leave the shared memory locked and non-cachable on 
+68040-based Macintoshes.
+
+The PowerPC emulation mode emulates a 68020 so thoroughly that even 
+Gestalt reports that the processor is a 68020.  However, the 601 chip's 
+data cache implementation is similar to the 68040's.  Because Gestalt 
+reported the processor as a 68020, the A/ROSE driver was unlocking the 
+shared memory, causing a hang on PowerPC machines.  The problems did not 
+occur when VM was active, since A/ROSE must keep the shared memory locked 
+to prevent the memory from being paged to disk or relocated, regardless 
+of the processor.
+
+The fix was to check the new Gestalt system architecture selector, 
+'sysa', to determine the family of the processor on the motherboard 
+(68000 family or PowerPC family).  If the processor is a PowerPC, A/ROSE 
+leaves the shared memory locked down even though the PowerPC is emulating 
+a 68020.
+
+o On PowerPC-based Macintoshes, A/ROSE now page-aligns the block of 
+shared motherboard memory used by NuBus cards and pads the memory out to 
+the next page boundary.  This prevents other memory surrounding the 
+shared memory from being made noncachable when the block is locked down 
+using LockMemory.  This code was already being executed on 68040-based 
+Macintoshes, but it's now also being executed on PowerPC-based machines.
+
+Requires:  System 6.0.5 or greater, MacPlus or later CPU.
+
+Keywords:  A/ROSE, MCP, Macintosh Coprocessor Platform, Ethernet NB, 
+PowerPC, Network Software, AppleTalk, TokenTalk, Token Ring
+Virus scan:  Disinfectant 3.5 shows no viruses in this file
